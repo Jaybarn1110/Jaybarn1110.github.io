@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 다국어 인코딩 설정 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- 메타: e.g. 메타 데이터(데이터의 데이터) -->
+    <!-- 반응형을 처리하기 위해서 필요한 meta 태그 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- include 할 CSS 파일들 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+    <title>BARN's work</title>
+
+    <!-- include 할 JavaScript 파일들 -->
+    <!-- e.g. <script src="경로"></script> -->
+</head>
+<body>
+    <!-- 시맨틱 태그(semantic tag) -->
+    <header>
+        <!-- TODO: 로고 이미지 img 태그를 하나 두시고, div 클래스명은 logo로 감싸세요. -->
+        <div class="logo"> 
+            <a href="https://placeholder.com"><img src="https://via.placeholder.com/48"></a>
+        </div>
+        <ul class="gnb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Study</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Contact me</a></li>
+        </ul>
+        <!--  TODO: GNB(Gloal Navigation Bar) -->
+        <!-- ul 태그를 두고 클래스명은 gnb, li 태그 7개 li 내부의 a 태그는 href="#" -->
+        <!-- li 태그는 Home, About Me, Portfolio, Skills, Study, Career, Contact Me -->
+        <!-- ul.gnb>(li>a)*7 -->
+    </header>
+    <main role="main">
+        <!-- 케밥 표기법 -->
+        <section class="home">
+            <!-- 클래스명이 contents 인 div 태그 생성 > 하위 태그로 heading 클래스명 div 태그 -->
+            <div class="contents">
+                <div class="heading">
+                    <h1>
+                        <!-- TODO: 홈페이지를 대표하는 문구 -->
+                        Think & Discover
+                    </h1>
+                    <br>
+                    <p>
+                        <!-- 부연설명 -->
+                        사용자조차 스스로 알지 못하는 불편함을 찾아주는 디자인
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- 
+            <section class="about-me">
+                <div class="contents">
+                    <div class="about-me-wrapper">
+                        <div class="profile">
+                            <img src="">
+                        </div>
+                        <div class="desc.">
+                            <img src="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+         -->
+        <section class="about-me">
+            <div class="contents">
+                <div class="about-me-wrapper">
+                    <div class="profile">
+                        <img src="images/sketch-926667__480.jpeg">
+                    </div>
+                    <div class="description">
+                        <h3>About me</h3>
+                        <h2>안녕하세요. UXUI 디자이너 반재현입니다.</h2>
+                        <br>
+                        <p>🇬🇧 런던에서 왔어요 : 3년간 인문학적인 디자인을 배웠어요.</p>
+                        <p>🍸 조주기능사자 자격증 보유 : 팀원들을 즐겁게 해줄 황금 비율을 알아요.</p>
+                        <p>🎸 흥이 떨어졌으면 책임져 : 전자기타를 칠 줄 알아요. 플리추천은 언제든지!</p>
+                        <p>🏋️ 무한체력의 소유자 : 피티 10년차로 야근도 거뜬해요. </p>
+                        <p>🎨 자유로운 드로잉 : 동서양을 넘나드는 회화실력을 보여줄게요. </p>
+                    </div>
+                </div>
+        </section>
+        <section class="skills">
+            <div class="contents">
+            <div class="skills__wrapper">
+                <h2 class="skills__title">
+                    제가<br>보유하고 있는<br>기술목록입니다.
+                </h2>
+                <ul class="skills__list">
+                    <li>
+                        <h3>Communication skills</h3>
+                        <p>팀원들과 적극적으로 커뮤니케이션을 합니다.
+                            <br>영어와 프랑스어를 구사할 수 있습니다!
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Tools</h3>
+                        <p>Figma, Sketch, Adobe XD, Principle
+                            <br>Adobe premier, After Effects, Photoshop, Illustration
+                            <br>Notion, Slack, Click-up, Miro, Zeplin, Blender
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Design Philosophy</h3>
+                        <p>디자인철학과 인문학을 바탕으로 사람의 마음을 움직이는 디자인을 지향합니다.</p>
+                    </li>
+                    <li>
+                        <h3>Multi disiplinary</h3>
+                        <p>서양화, 동양화, 광고디자인을 바탕으로 다학제적인 베이스를 가지고 있습니다.</p>
+                    </li>
+                    <li>
+                        <h3>Stick to the basics</h3>
+                        <p>기본에 충실합니다!</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+        <section class="experiences">
+            <div class="contents"></div>
+        </section>
+        <section class="projects">
+            <div class="contents"></div>
+        </section>
+
+        <section class="contact-me">
+            <div class="contents"></div>
+        </section>
+    </main>
+    <footer>푸터 영역</footer>
+</body>
+</html>
