@@ -1,0 +1,187 @@
+/* border 속성처럼 한 줄에 여러 속성을 주는 형식을 속기(shorthand)라고 한다. */
+/* 헤더 영역 CSS */
+header {
+    height: 7rem;
+    border: 1px solid red;
+    /* display: flex 라는 속성은 flexible 하고 싶은 요소 중 "부모" 태그에 적용! */
+    display: flex;
+    /* flex-direction: row; CSS 속성이 display: flex 로 주는 순간 default */
+
+    /* justify-content: 주축 기준의 방향을 설정하는 속성 */
+    justify-content: center;
+}
+header .logo {
+   flex: 0.2;
+}
+header ul {
+    flex: 0.8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid purple;
+    display: flex;
+    
+}
+header ul li {}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid blue;
+}
+
+/* 공통 영역 */
+section {
+    height: 100vh;
+    border: 1px solid #000;
+}
+section:first-child{
+    height: calc(100vh - 7rem);
+}
+
+
+/* 홈 영역 */
+/*
+웹에서 이미지를 넣는 방법
+1. <img> 이용
+2. <div> 쓰고, css 적용 (background-image)
+.home {
+    background: url();
+    background-repeat: no-repeat;
+    opcacity: 0.8;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: 
+}
+.heading h1 {
+    font-size: 3rem;
+}
+.heading p {
+    font-size: 1.5rem;
+    padding: 0 100px;
+}
+*/
+
+.home {
+    background: url("../images/texture-g9cf0a72aa_1280.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 7rem);
+    border: 1px solid #000;
+}
+.heading h1 {
+    font-size: 3rem;
+}
+.heading p {
+    font-size: 1.5rem;
+    padding: 0 100px;
+}
+
+
+/* about-me 영역 */
+/*
+.about-me-wrapper {
+    display: flex;
+}
+.about-me-wrapper div {
+    padding: 0 30px;
+}
+.about-me {
+  display: flex;
+}
+.profile {
+    flex: 0.4;
+}
+.profile img {
+    width: 100%;
+    margin-top: 6rem;
+
+    border-radius: 40% 60% 70% 30% / 60% 40% 60% 40%;
+}
+*/
+.about-me-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    height: 100vh;
+}
+.about-me-wrapper div {
+    padding: 0 30px;
+}
+.about-me {
+    display: flex;
+    justify-content: center;
+    background-color:rgb(228, 228, 228);
+}
+.profile{
+    flex: 0.4;
+}
+.profile img {
+    width: 100%;
+    margin-top: 6rem;
+    border-radius: 40% 60% 70% 30% / 60% 40% 60% 40%;
+}
+.description {
+    flex: 0.6;
+}
+
+footer {border: 1px solid green;}
+
+.skills {
+    background-color: whitesmoke;
+}
+.skills__wrapper {
+    display: flex;
+    height: 100vh;
+    border: 1px solid tomato;
+    padding: 7rem 0;
+}
+.skills__title {
+    flex: 0.4;
+    font-size: 3rem;
+    text-align: right;
+    padding: 5rem;
+    font-weight: 500;
+}
+
+.skills__list  {
+    border-left: 1px solid #a0a0a0;
+    flex: 0.6;
+    padding-left: 3rem;
+}
+
+.skills__list li {
+    width: 90%;
+    line-height: 2.5;
+}
+
+.skills__list li::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    position: absolute;
+    margin: 0.2rem 4rem 0 0;
+    color: red;
+}
+
+.skills__list li:last-child h3::after{
+    content: '기본에 충실하다.';
+    color: gray;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+}
+
+.skills__list li h3{
+    margin-left: 1.5rem;
+}
